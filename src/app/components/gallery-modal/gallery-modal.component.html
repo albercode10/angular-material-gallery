@@ -1,0 +1,16 @@
+<mat-dialog-content
+  (swipeleft)="changeImg(1)"
+  (swiperight)="changeImg(-1)"
+>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <button  fxHide fxShow.gt-sm *ngIf="!image.first" mat-button (click)="changeImg(-1)">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <img class="mat-dialog-content-img"
+         [src]="image.src"
+         [alt]="image.alt">
+    <button fxHide fxShow.gt-sm *ngIf="!image.last" mat-button (click)="changeImg(1)">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+</mat-dialog-content>

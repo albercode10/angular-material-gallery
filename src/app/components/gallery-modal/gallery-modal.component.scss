@@ -1,0 +1,34 @@
+.mat-dialog-content-img {
+  max-height: 100vh;
+  max-width: 70vw;
+}
+
+@media (min-width: 768px) {
+  .mat-dialog-content-img {
+    max-height: 100vh;
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .mat-dialog-content-img {
+    max-height: 80vh;
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mat-dialog-content-img {
+    max-height: 70vh;
+    max-width: 50vw;
+  }
+}
+
+button{
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+
+
